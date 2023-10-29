@@ -19,12 +19,16 @@ const withBundleAnalyzerConfig = withBundleAnalyzer(bundleAnalyzerConfig)
 
 const nextConfig = {
   staticPageGenerationTimeout: 1000,
-
+  runtime: "edge",
   swcMinify: true,
   images: {
     // unoptimized: true,
     dangerouslyAllowSVG: true,
-    domains: ["www.notion.so", "s3.us-west-2.amazonaws.com","res.cloudinary.com"],
+    domains: [
+      "www.notion.so",
+      "s3.us-west-2.amazonaws.com",
+      "res.cloudinary.com",
+    ],
     // remotePatterns: [
     //   {
     //     protocol: "https",
@@ -45,7 +49,6 @@ const nextConfig = {
     scrollRestoration: true,
     webpackBuildWorker: true,
     nextScriptWorkers: true,
-    runtime: 'edge',
     swcPlugins: [
       stailwc({
         engine: "styled-components", // or "styled-components"
@@ -58,4 +61,3 @@ const nextConfig = {
 }
 
 export default withBundleAnalyzerConfig(withPWAConfig(million.next(nextConfig)))
-
