@@ -1,16 +1,14 @@
-export const runtime = 'edge'
 import { isCartOpenAtom, isMessengerAtom, isSearchOpenAtom } from "@/lib/atoms"
 import { useAtom } from "jotai"
 import dynamic from "next/dynamic"
 import FadeIn from "react-fade-in/lib/FadeIn"
+import MessengerCustomerChat from "react-messenger-customer-chat"
 import Drawer from "react-modern-drawer"
 import SearchMenu from "./header/SearchMenu"
 import Loading from "./icons/IconLoading"
 import Footer from "./layout/Footer"
-import { FacebookChat } from "./social-network/FacebookChat"
 import FacebookFakeButton from "./social-network/FacebookFakeButton"
 import FacebookFakeSpinner from "./social-network/FacebookFakeSpinner"
-import MessengerCustomerChat from "react-messenger-customer-chat"
 
 const DynamicHeader = dynamic(() => import("../components/layout/Header"), {
   loading: () => <Loading />,

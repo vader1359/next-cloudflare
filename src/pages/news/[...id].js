@@ -49,3 +49,5 @@ const S = {}
 S.Project = tw(MaxWidth)``
 
 export default Project
+
+export const runtime = 'edge';
