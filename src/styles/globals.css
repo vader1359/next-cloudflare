@@ -2,26 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html {
+  scrollbar-gutter: stable;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.notion-header {
+  display: none;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.notion-hash-link {
+  display: none;
+}
+
+.notion-collection-page-properties {
+  display: none !important;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.customOverlay {
+  background: rgba(36, 123, 160, 0.7);
+  margin-top: 72px;
+  margin-bottom: 72px;
+  z-index: 0 !important;
+}
+.customModal {
+  background: #b2dbbf !important;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  margin-top: 72px !important;
+  margin-bottom: 72px !important;
+  max-width: none !important;
+  padding: 0 !important;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.custom-number-input input:focus {
+  outline: none !important;
+}
+
+.custom-number-input button:focus {
+  outline: none !important;
 }
