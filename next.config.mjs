@@ -18,6 +18,7 @@ const withPWAConfig = withPWA(pwaConfig)
 const withBundleAnalyzerConfig = withBundleAnalyzer(bundleAnalyzerConfig)
 
 const nextConfig = {
+  output: 'export',
   staticPageGenerationTimeout: 1000,
   runtime: "edge",
   swcMinify: true,
