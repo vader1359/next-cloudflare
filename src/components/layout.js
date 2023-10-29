@@ -99,4 +99,5 @@ S.Children = tw.div`z-0 min-h-screen py-28 lg:py-32`
 S.SearchMenu = tw(Drawer)``
 S.Cart = tw(Drawer)`fixed h-auto top-[72px] bottom-[64p]`
 
+export const runtime = 'edge'
 export default Layout
