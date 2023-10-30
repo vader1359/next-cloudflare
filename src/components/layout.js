@@ -1,6 +1,4 @@
-import dynamic from "next/dynamic"
 import Drawer from "react-modern-drawer"
-import Loading from "./icons/IconLoading"
 
 
 const Layout = ({ className, children }) => {
