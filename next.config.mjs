@@ -48,7 +48,6 @@ const nextConfig = {
     scrollRestoration: true,
     webpackBuildWorker: true,
     nextScriptWorkers: true,
-    runtime: 'experimental-edge',
     swcPlugins: [
       stailwc({
         engine: "styled-components", // or "styled-components"

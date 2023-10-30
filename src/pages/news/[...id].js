@@ -3,7 +3,6 @@ import * as notion from "../../lib/notion"
 import { fetchNews, fetchAllNewses } from "@/hooks/useNews"
 import { NotionPage } from "@/components/common/NotionPage"
 
-import MaxWidth from "@/components/layout/MaxWidth"
 import { parsePageId } from "notion-utils"
 import { previewImagesEnabled } from "../../lib/config"
 
@@ -46,9 +45,8 @@ const Project = ({ initialProject, params, recordMap }) => {
 
 const S = {}
 
-S.Project = tw(MaxWidth)``
+S.Project = tw.div``
 
 export default Project
 
-// export const config = { runtime: 'edge' }
-
+// export const config = { runtime: 'edge' };
