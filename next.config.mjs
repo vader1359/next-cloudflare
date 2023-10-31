@@ -22,7 +22,7 @@ const nextConfig = {
   staticPageGenerationTimeout: 1000,
   swcMinify: true,
   images: {
-    // unoptimized: true,
+    unoptimized: true,
     dangerouslyAllowSVG: true,
     domains: [
       "www.notion.so",
