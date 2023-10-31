@@ -7,6 +7,7 @@ import { NotionRenderer } from "react-notion-x"
 import dynamic from "next/dynamic"
 import { getPageTitle } from "notion-utils"
 import { useRouter } from "next/router"
+import Header from "../layout/Header"
 
 // const Collection = dynamic(() =>
 //   import('react-notion-x/build/third-party/collection').then(
