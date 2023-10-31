@@ -18,6 +18,7 @@ const withPWAConfig = withPWA(pwaConfig)
 const withBundleAnalyzerConfig = withBundleAnalyzer(bundleAnalyzerConfig)
 
 const nextConfig = {
+  reactStrictMode: true,
   staticPageGenerationTimeout: 1000,
   swcMinify: true,
   images: {
@@ -48,6 +49,9 @@ const nextConfig = {
     scrollRestoration: true,
     webpackBuildWorker: true,
     nextScriptWorkers: true,
+    experimental: {
+      runtime: 'edge',
+    },
     swcPlugins: [
       stailwc({
         engine: "styled-components", // or "styled-components"
